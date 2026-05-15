@@ -1,35 +1,124 @@
-# v0-payment-news-backend
+# PaymentNews - 支付行业资讯聚合平台
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+专业的支付行业资讯聚合平台，为金融科技从业者提供最新、最全面的行业动态、政策法规、产品发布和市场分析。
 
-## Built with v0
+## 🚀 项目特色
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+- **深色科技金融风格** - 类似 Bloomberg/Stripe/TradingView 的专业界面
+- **实时资讯聚合** - 汇聚全球支付行业最新动态
+- **智能分类标签** - AI 驱动的内容分类和标签系统
+- **响应式设计** - 完美适配桌面端和移动端
+- **组件化开发** - 模块化的代码架构，易于维护和扩展
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_g00GfWjogJFF1k5eSF98O613tNUo)
+## 🛠️ 技术栈
 
-## Getting Started
+- **前端框架**: Next.js 14 (App Router)
+- **类型系统**: TypeScript
+- **样式方案**: Tailwind CSS
+- **UI 组件**: Custom Components + Radix UI
+- **图标库**: Lucide React
 
-First, run the development server:
+## 📱 页面展示
+
+### 主要功能模块
+
+1. **顶部导航栏** - 品牌标识、智能搜索、分类导航
+2. **今日重点新闻** - AI 精选的重要资讯展示
+3. **热门标签** - 实时热门话题和趋势指示
+4. **行业快讯** - 可筛选的新闻流
+5. **实时榜单** - 热门新闻、公司、关键词排行
+6. **侧边栏信息区** - 统计数据、快速更新、行业日历
+
+### 演示页面
+
+- `/simple-demo` - 简化版演示页面（推荐）
+- `/demo` - 完整版前台页面
+- `/frontend` - 原版前台页面
+- `/dashboard` - 后台管理页面
+
+## 🚀 快速开始
+
+### 安装依赖
+
+```bash
+npm install
+# 或
+yarn install
+# 或
+pnpm install
+```
+
+### 启动开发服务器
 
 ```bash
 npm run dev
-# or
+# 或
 yarn dev
-# or
+# 或
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+在浏览器中打开 [http://localhost:3000/simple-demo](http://localhost:3000/simple-demo) 查看演示页面。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 构建生产版本
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more, take a look at the following resources:
+## 📂 项目结构
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+```
+├── app/                    # Next.js App Router 页面
+│   ├── simple-demo/       # 简化版演示页面
+│   ├── demo/              # 完整演示页面
+│   ├── frontend/          # 前台页面
+│   └── dashboard/         # 后台管理
+├── components/            # React 组件
+│   ├── frontend/          # 前台组件
+│   ├── admin/             # 后台组件
+│   └── ui/                # 基础 UI 组件
+├── styles/                # 样式文件
+│   ├── dark-theme.css     # 深色主题
+│   └── utils.css          # 工具样式
+└── public/                # 静态资源
+```
 
-<a href="https://v0.app/chat/api/kiro/clone/juju-shirls/v0-payment-news-backend" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+## 🎨 设计理念
+
+### 视觉风格
+- **深色科技感** - 专业的金融科技平台视觉
+- **卡片化布局** - 清晰的信息层次和视觉焦点
+- **数据可视化** - 直观的热度指示器和趋势图表
+- **微交互动画** - 流畅的用户体验
+
+### 色彩方案
+- **主色调** - 深蓝灰色系（Slate 900/800）
+- **强调色** - 蓝色系（Blue 500/400）
+- **分类色彩** - 红色（政策监管）、绿色（企业新闻）、蓝色（金融科技）
+- **状态色彩** - 绿色（上涨）、红色（下跌）、黄色（稳定）
+
+## 📊 功能特性
+
+- ✅ **实时数据更新** - 动态数据刷新和状态指示
+- ✅ **智能搜索** - 全局搜索功能
+- ✅ **分类筛选** - 多维度内容筛选
+- ✅ **排行榜系统** - 热门内容排行
+- ✅ **标签云** - 热门标签展示
+- ✅ **响应式设计** - 移动端适配
+- ✅ **无障碍支持** - 良好的可访问性
+
+## 📝 开发说明
+
+本项目采用现代化的前端开发技术栈，注重代码质量和用户体验。所有组件都经过精心设计，确保在不同设备上都能提供一致的视觉体验。
+
+项目使用 Mock 数据展示，便于快速演示和开发测试。未来可以轻松集成真实的 API 接口。
+
+## 📄 License
+
+MIT License
+
+---
+
+Built with ❤️ for the Payment Industry
